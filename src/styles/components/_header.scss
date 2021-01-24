@@ -1,0 +1,43 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        font-family: $font-primary;
+        font-size: $font-title-big;
+        font-weight: bold;
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+
+.search {
+    height: 45px;
+    width: 600px;
+    background-color: $color-secondary;
+    border-radius: 25px;
+    display: flex;
+    &__bar {
+        padding-left: 15px;
+        width: 100%;
+        font-family: 'Open Sans';
+        font-size: $font-paragraph-big;
+        color: $color-tertiary;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}

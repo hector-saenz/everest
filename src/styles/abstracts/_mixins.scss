@@ -1,0 +1,10 @@
+@mixin button() {
+    padding: 5px;
+    min-height: 40px;
+    min-width: 80px;
+    font-size: $font-paragraph-medium;
+    font-family: $font-secondary;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}

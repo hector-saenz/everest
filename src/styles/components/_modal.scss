@@ -1,0 +1,44 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    &__image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        min-height: 100px;
+        margin: 1% auto;
+        padding: 20px;
+        height: auto;
+        background-color: white;
+        border-radius: 25px;
+    }
+    &__image {
+        max-height: 600px;
+        display: block;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 15px;
+    }
+    &__button {
+        float: right
+    }
+}
+
+.button-danger {
+    background-color: $color-danger;
+    color: white
+}
+
+.button-danger:hover {
+    background-color: $color-danger-hover;
+}

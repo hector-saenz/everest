@@ -1,19 +1,32 @@
 <!DOCTYPE html>
+<!--
+    "You must immerse yourself in your work. You have to fall in love with your work...
+    You must dedicate your life to mastering your skill. That's the secret of success."
+    - Chef Jiro
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pintate</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Everest</title>
 </head>
 <body>
-    <header>
-
+    
+    <header id="header" class="header">
+        <div class="logo">
+            <h1><a class="logo__text" href="#feed">Everest</a></h1>
+        </div>
+        <div class="search">
+            <input type="text" class="search__bar" placeholder="Buscar">
+        </div>
     </header>
-    <main>
-        <h1>Hello world</h1>
-    </main>
-    <footer>
+    <main id="main" class="main">
+        <div id="modal" class="modal"></div>
 
-    </footer>
+        <div class="container">
+            <div id="feed" class="feed"></div>
+        </div>
+    </main>
 </body>
 </html>

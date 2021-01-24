@@ -1,0 +1,14 @@
+@import 'base/reset';
+
+@import 'vendors/fonts';
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/header';
+@import 'components/imageSkeleton';
+@import 'components/modal';
+
+@import 'pages/home';
+
+@import 'abstracts/mediaQueries';
