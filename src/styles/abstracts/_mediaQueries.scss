@@ -27,6 +27,13 @@
     }
     .search {
         width: 300px;
+        &__options {
+            bottom: -50px;
+            height: 50px;
+        }
+        &__options-text {
+            max-width: 90%;
+        }
     }
     .search__bar {
         font-size: $font-paragraph-medium;
