@@ -1,73 +1,75 @@
 body {
-    background-color: $color-secondary
+	background-color: $color-secondary;
 }
 
 .main {
-    padding-top: 100px;
-    min-height: 100vh;
+	padding-top: 100px;
+	min-height: 100vh;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 95%;
+	margin: 0 auto;
+	max-width: 95%;
 }
 
 .feed {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
-    grid-gap: 15px;
-    justify-content: center;
-    &__image {
-        min-height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-        border-radius: 25px;
-    }
-    &__image-container {
-        border-radius: 25px;
-        position: relative;
-        overflow: hidden;
-    }
-    &__image-overlay {
-        padding: 15px;
-        background: rgba(0,0,0,.3);
-        display: none;
-        justify-content: flex-end;
-        align-items: flex-start;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    &__image-container:hover &__image-overlay  {
-        display: flex;
-    }
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 170px);
+	grid-gap: 12px;
+	justify-content: center;
+
+	&__image {
+		max-width: 100%;
+		min-height: 100%;
+		border-radius: 8px;
+		object-fit: cover;
+	}
+
+	&__image-container {
+		position: relative;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	&__image-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: none;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding: 15px;
+		background: rgba(0, 0, 0, 0.3);
+	}
+
+	&__image-container:hover &__image-overlay {
+		display: flex;
+	}
 }
 
-
-
 .big {
-    grid-row: span 3;
+	grid-row: span 3;
 }
 
 .medium {
-    grid-row: span 2;
+	grid-row: span 2;
 }
 
 .small {
-    grid-row: span 1;
+	grid-row: span 1;
 }
 
 .button {
-    @include button()
+	@include button();
 }
 
 .button-primary {
-    background-color: $color-primary;
-    color: white;
+	background-color: $color-primary;
+	color: white;
 }
 
 .button-primary:hover {
-    background-color: $color-primary-hover;
+	background-color: $color-primary-hover;
 }

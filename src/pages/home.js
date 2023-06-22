@@ -1,8 +1,8 @@
-import manageEvents from '../utils/manageEvents'
-import loadPage from '../utils/loadPage'
+import manageEvents from "../js/manageEvents";
+import loadPage from "../js/loadPage";
 
-const feed = document.querySelector('#feed')
+const feed = document.querySelector("#feed");
 
-window.addEventListener('click', manageEvents)
+window.addEventListener("click", manageEvents);
 
-loadPage(feed)
+loadPage(feed);

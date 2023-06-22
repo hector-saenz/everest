@@ -1,44 +1,47 @@
 .modal {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    &__image-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        min-height: 100px;
-        margin: 1% auto;
-        padding: 20px;
-        height: auto;
-        background-color: white;
-        border-radius: 25px;
-    }
-    &__image {
-        max-height: 500px;
-        display: block;
-        margin: 20px auto;
-        max-width: 600px;
-        border-radius: 15px;
-    }
-    &__button {
-        float: right
-    }
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	&__image-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 1% auto;
+		padding: 12px;
+		min-height: 100px;
+		height: auto;
+		background-color: white;
+		border-radius: 8px;
+	}
+
+	&__image {
+		display: block;
+		margin: 22px auto 0;
+		max-height: 350px;
+		max-width: 313px;
+		border-radius: 6px;
+	}
+
+	&__button {
+		float: right;
+	}
 }
 
 .button-danger {
-    background-color: $color-danger;
-    color: white
+	background-color: $color-danger;
+	color: white;
 }
 
 .button-danger:hover {
-    background-color: $color-danger-hover;
+	background-color: $color-danger-hover;
 }
